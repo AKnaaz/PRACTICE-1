@@ -1,0 +1,654 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-image: linear-gradient(rgba(255, 192, 203, 0.479), rgba(112, 47, 173, 0.452));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav > ul{
+    display: flex ;
+    margin-right: 50px;
+}
+
+nav > ul > li{
+    list-style: none;
+    margin: 0 5px;
+    padding: 15px 0;
+    margin-left: -5px;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: darkblue;
+    font-size: 18px;
+    border-right: 1px solid darkblue;
+    padding:16px 20px;
+    transition: 0.3s;
+}
+nav > ul > li:first-child > a{
+    border-left: 1px solid darkblue;
+}
+nav > ul > li:hover > a{
+    background-color: rgba(34, 8, 59, 0.096);
+}
+.logo > h1{
+    color: darkblue;
+    margin-left: 50px;
+}
+/* span tag diye eivabe letter k color, choto-boro etc kora jai. */
+.firstletter{
+    color: rgba(8, 8, 150, 0.938);
+    font-size: 45px;
+}
+
+
+/* ddm dropdown menu short form. ddm code start. */
+.ddm{
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(112, 47, 173, 0.452);
+    text-align: center;
+    margin-top: 15px;
+    position: absolute;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: top;
+    box-shadow: 10px 10px 8px black;
+}
+
+.ddm > li {
+    list-style: none;
+    width: 150px;  
+    padding: 10px; 
+    border-bottom: 1px solid darkblue; 
+}
+.ddm > li:hover{
+    background-color: rgba(34, 8, 59, 0.096);
+}
+.ddm > li:first-child{
+     border-top: 1px solid darkblue;
+}
+.ddm > li > a{
+    text-decoration: none;
+    color: darkblue;
+}
+nav > ul > li:hover > .ddm{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    
+}
+
+/* main area style code start from here */
+.mainarea{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.377)), url('laptop');
+    /* eta safetyr jonno sob somoy use korbe. */
+    background-repeat: no-repeat;
+    /* er dhara image joto choto hok ta full bg cover korbe. */
+    /* r image jodi boro hoi r niche chole jai.tahole bg position center diley sob thik hoye jabe/ */
+    background-size: cover;
+    text-align: center;
+    height: 90vh;
+}
+.container1{
+    /* er maddhome text gula niche namse. main areai eta dio na. cz tmi containerer text k niche namaite chaiteso, mian areaer text k na.  */
+    padding-top: 100px;
+}
+.container1 > h1{
+    background-color: rgba(156, 101, 207, 0.486);
+    width: 500px;
+    font-size: 50px;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 15px 25px;
+    color: darkblue;
+}
+.container1 > button{
+    background-color: rgba(156, 101, 207, 0.486);
+    color: darkblue;
+    margin-top: 10px;
+    padding: 20px 25px;
+    border-radius: 30px 10px 30px 10px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 4px solid rgba(112, 47, 173, 0.452);
+    transition: 0.5s;
+}
+.container1 > button:hover{
+    background-color: rgba(137, 43, 226, 0.096);
+}
+.container1 > h4{
+    color: darkblue;
+}
+.container1 > h5{
+    color: darkblue;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+/* main section code start from here. */
+/* 1st section style code start from here */
+section{
+    background-color: lightpink;
+}
+.parent{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    padding: 100px;
+    justify-content: space-between;
+}
+/* sob gula div er naam same kore disi, cz sob div er design ekei. jokon kono kichor design ek rokom hbe tokon sob div er naam ekta diyei style kora jai. */
+.learnpg{
+    width: 300px;
+    text-align: center;
+    padding: 15px 10px;
+    transition: 0.5s;
+}
+.learnpg > i{
+    font-size: 50px;
+}
+.learnpg > h2{
+    margin: 15px ;
+}
+.learnpg:hover{
+    box-shadow: 3px 3px 10px gray;
+}
+
+/* 2nd section style code start from here */
+.secondpa > h2{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    /* er dhara nicher daag tak bola holo eita tmr jaiga. ei jaiga chara kothao jaba na. */
+    color: rgb(58, 6, 6);
+}
+.secondpa > h2::after{
+    content: '';
+    /* er dhara daag ta create kora holo. ei jonno quotation diye jaiga ta khali raka holo. */
+    position:absolute ;
+    width:100px ;
+    height: 5px;
+    background-color: rgb(104, 15, 15);
+    top: 56px;
+    left: 600px;
+    /* content, position, top/bottom, left/right eigula mandatory likhte hbe pseudo code a. */
+}
+.childpa{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.childpa2{
+    width: 500px;
+}
+.childpa2 > h2{
+    margin: 20px;
+    color: rgb(104, 15, 15);
+}
+.childpa2 > h4{
+    color: rgb(58, 6, 6) ;
+}
+.childpa2 > p{
+    color: rgb(58, 6, 6);
+}
+.childpa2 > a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(104, 15, 15);
+    padding: 10px 30px;
+    display: inline-block;
+    /* eta na dile margin kaj korbe na. cz anchor tag holo block element. */
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.childpa2 > a:hover{
+    background-color: rgb(58, 6, 6);
+}
+.ic1{
+    color: red;
+    text-decoration: none;
+}
+.ic1 > i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* eta diye kono kicho k circle kora hoi. r circle korar jonno width, height ekei px a dite hbe abong border-radius 50% dite hbe. */
+    font-size: 30px;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid white;
+    line-height: 1.6;
+    /* eta diye icon gula k majkhane aana holo. eta chara display-flex, justify-content, align-items er dhara o ekei kaj kora jai. */
+    margin: 10px 5px;
+    transition: 0.5s;
+}
+.ic1 > i:hover{
+    background-color: rgba(255, 255, 255, 0.116);
+    border: rgba(255, 255, 255, 0.089);
+    transform: rotate(360deg);
+} 
+.ic2{
+    color: dodgerblue;
+    text-decoration: none;
+}
+.ic2 > i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* eta diye kono kicho k circle kora hoi. r circle korar jonno width, height ekei px a dite hbe abong border-radius 50% dite hbe. */
+    font-size: 30px;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid white;
+    line-height: 1.6;
+    /* eta diye icon gula k majkhane aana holo. eta chara display-flex, justify-content, align-items er dhara o ekei kaj kora jai. */
+    margin: 10px 5px;
+    transition: 0.5s;
+}  
+.ic2 > i:hover{
+    background-color: rgba(255, 255, 255, 0.116);
+    border: rgba(255, 255, 255, 0.089);
+    transform: rotate(360deg);
+} 
+
+/* 3rd section style code start here */
+
+.grandpa1{
+    text-align: center;
+    color: rgb(58, 6, 6) ;
+}
+.grandpa1 > h2{
+    font-size: 40px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.grandpa2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 60px;
+}
+.grandpa{
+    width: 1000px;
+    margin: auto;
+}
+.gd{
+    background-color: #5a1032;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+.gd > i{
+    font-size: 40px;
+    color: white ;
+}
+.gd > h3{
+    margin: 15px;
+}
+.gd:hover{
+    background-color: #690c38b4;
+}
+
+/* 4th section style code start here */
+
+.card{
+    width: 1000px;
+    margin: auto;
+    padding: 100px;
+}
+.card1{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(58, 6, 6);
+    padding: 50px;
+}
+.card2{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.card-img{
+    width: 310px;
+}
+.card-img > img{
+    max-width: 100%;
+}
+.ca{
+    width: 310px;
+    color: rgb(58, 6, 6);
+    box-shadow: 5px 5px 10px gray;
+}
+.ca > h3{
+    margin: 10px;
+    font-size: 25px;
+}
+.price{
+    border-top: 1px dashed rgba(0, 0, 0, 0.459);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.459);
+    padding: 15px;
+    margin: 15px 20px;
+}
+.price > .price1{
+    font-size: 25px;
+}
+.price > .price2{
+    color: rgba(58, 6, 6, 0.637);
+}
+.ca > button{
+    background-color: rgb(104, 15, 15);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 8px ;
+    transition: 0.5s;
+}
+.ca > button:hover{
+    background-color: lightpink;
+    color: black;
+    cursor: pointer;
+}
+.ca > a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px;
+    /* anchor tag holo ekta inline element. r inline element er moddhe margin/padding konotai kaj kore na. tai eta k ageh inline-block kore nite hoi. */
+    color: rgb(58, 6, 6);
+}
+
+/* 5th section or testimony section style code start from here */
+
+.testimonials{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.test-title{
+    text-align: center;
+    padding: 50px;
+}
+.test-title > h2{
+    font-size: 25px;
+    color: rgb(58, 6, 6);
+    margin-bottom: 5px;
+}
+.test-title > h4{
+    color: rgba(58, 6, 6, 0.432);
+    letter-spacing: 0.3em;
+}
+.test-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px ;
+}
+.test-box1{
+    display: flex;
+    align-items: center;
+    background-color: wheat;
+    padding: 20px;
+}
+.test-image{
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.test-image > img{
+    max-width: 100%;
+    border-radius: inherit;
+    border: 1px solid rgb(58, 6, 6);
+}
+.test-box2{
+    color: rgb(58, 6, 6);
+}
+.test-box3{
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 10px;
+    /* amra jani inline tag a margin/padding konota kaj kore na. r span ekta inline tag. tai display inline-block korte holo */
+}
+.star{
+    color: #ffa534;
+    margin-top: 10px;
+}
+
+/* 6th section or parallel section style code start from here */
+
+.parallel-parent{
+    background-image: url(parallel);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* image jodi boro choto hoi tahole tha k display unojai set korte ei property use hoi */
+    background-position: center;
+    /* eta diye image er majkhaner jinish show korano hoi */
+    background-attachment: fixed;
+    padding: 80px;
+}
+.parallel{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+}
+.pa1{
+    color: white;
+    font-size: 40px;
+}
+.pa1 > h2{
+    margin: 20px;
+}
+.pa1 > h3{
+    font-size: 15px;
+}
+
+/* 7th section or blog section style code start from here */
+
+.blog-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.blog-items-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:25px;
+}
+.blog-image{
+    max-width: 100%;
+    height: 250px;
+    transition: 0.6s;
+}
+.blog-icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* absolute diye kono jinish k vashiye dewa hoi. r er sathe top/bottom, left/right, height/width etc likhtei hbe. */
+    display: grid;
+    place-content: center;
+    text-align: center;
+    /* onk niyom e vashiye dewa jinish k majkhane aana jai. but amra uporer niyome korchi */
+    color: white;
+    font-size: 22px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.blog-image-icon-div{
+    position: relative;
+    /* er mane veshe jawa kono jinish k bole dewa she kothotoko jaiga jure vashte parbe. */
+    overflow: hidden;
+    /* er dhara box er bahire kicho jodi chole ashe tha lokiye fela hoi. ekhane use hoise zoom in jorar jonno */
+}
+.blog-image-icon-div:hover .blog-icons{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+.blog-icons i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.blog-image-icon-div:hover .blog-image{
+    transform: scale(1.6);
+    /* er dhara zoom in kora hoise image k. r etar transition blog-image a */
+}
+.single-item-text{
+    text-align: center;
+    margin: 10px;
+    color: rgb(58, 6, 6);
+}
+.single-item-text p{
+    margin-top: 10px;
+    color: rgba(58, 6, 6, 0.432);
+} 
+
+/* 8th section or contact section style code start from here */
+
+.contact-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.form-parent{
+    background-color: rgba(81, 156, 156, 0.575);
+    display: flex;
+}
+.f-e-parent{
+    display: flex;
+}
+.f-e-parent input{
+    width: 200px;
+    height: 40px;
+    margin: 0 20px;
+    padding: 0 20px;
+    border: none;
+}
+.f-e-parent h4{
+ margin: 40px 20px 10px 20px;
+ color: rgb(58, 6, 6);
+}
+.form-parent h4{
+    margin: 20px 20px 10px 20px;
+    color: rgb(58, 6, 6);
+}
+.in{
+    width: 85%;
+    height: 40px;
+    margin: 0 20px;
+    border: none;
+    padding: 0 20px;
+}
+.textarea{
+    width: 85%;
+    height: 80px;
+    margin: 0 20px;
+    border: none;
+    padding: 10px 20px ;
+}
+.form-tag{
+    width: 600px;
+}
+.form-button{
+    background-color: rgb(104, 15, 15);
+    color: white;
+    padding: 10px;
+    margin: 20px 0 0 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.form-button:hover{
+    background-color: inherit;
+    color: rgb(58, 6, 6);
+}
+.form-2nd{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 50px;
+}
+/* .form2{
+    text-align: center;
+} */
+.form2 i{
+    background-color: rgb(104, 15, 15);
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.form2 p span{
+    font-weight: bold;
+    color: rgb(58, 6, 6);
+}
+.form2 p{
+    color: rgb(58, 6, 6);
+}
+
+/* footer style code start from here */
+
+footer{
+    background-color: rgba(121, 12, 70, 0.767);
+}
+.footer-container{
+    width: 1000px;
+    margin: auto;
+}
+.footer-con2{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-box{
+    width: 220px;
+    color: rgba(58, 6, 6, 0.699);
+    overflow: hidden;
+}
+.footer-box h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(58, 6, 6);
+    margin: 50px 0 20px 0;
+}
+.footer-box p{
+ margin: 10px;
+}
+.footer-box .fp{
+    margin-bottom: 15px;
+}
+.footer-box a{
+    text-decoration: none;
+    color: navy;
+}
+.footer-con3 ul{
+    display: flex;
+    justify-content: center
+}
+.footer-con3 ul li{
+    list-style: none;
+    margin: 20px;
+}
+.footer-con3 ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(58, 6, 6);
+    font-size: 20px;
+}
+.footer-con3 p{
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgb(58, 6, 6);
+}
+.footer-con3 span{
+    color: navy;
+}
+hr{
+    margin-top: 40px;
+}
